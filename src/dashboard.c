@@ -96,7 +96,7 @@ static esp_err_t home(httpd_req_t *req) {
         httpd_resp_sendstr_chunk(req,
             "<article><a class='action' href='/monitor'>Monitor web</a>"
             "<form method='post' action='/otra-red'><button class='secondary' type='submit'>Ingresar a otra red</button></form>"
-            "<small>Versión 0.6.3</small></article></main>"
+            "<small>Versión 0.7.1</small></article></main>"
             "</html>");
         httpd_resp_sendstr_chunk(req,NULL);
         return ESP_OK;
@@ -113,7 +113,7 @@ static esp_err_t home(httpd_req_t *req) {
         "<input name='password' type='password' maxlength='63' autocomplete='off' required>"
         "</form><form method='post' action='/escanear'><button class='secondary' type='submit'>Actualizar redes</button></form>"
         "<button type='submit' form='conexion'>Conectar</button>"
-        "<small>Versión 0.6.3</small></article></main>"
+        "<small>Versión 0.7.1</small></article></main>"
         "<script>async function actualizar(){try{const r=await fetch('/estado',{cache:'no-store'});"
         "if(!r.ok)return;const d=await r.json();const n=document.getElementById('aviso');"
         "if(d.connected&&d.ip){n.classList.remove('hidden');const a=document.getElementById('acceso');"
